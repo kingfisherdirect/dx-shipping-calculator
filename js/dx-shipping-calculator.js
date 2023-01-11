@@ -49,26 +49,21 @@ window.onload = function() {
         outputs.discount.innerText = '£' + answers.discount;
     }
 
-    // Event listeners
-    const emptyInputs = () => {
+    const updateOuput = () => {
         // check to see if all inputs are not empty
         for (const key in inputs) {
             if (inputs[key].value === "") {
-                return true;
+                return;
             }
         }
-        return false;
-    }
 
-    const updateOuput = () => {
-        if (emptyInputs()) return;
         const answers = calcAnswers(inputs.height.value, inputs.length.value, inputs.depth.value);
         outputAnswers(answers);
+        outputs.container.classList.add('active');
     }
 
     submitBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        if (!emptyInputs()) outputs.container.classList.add('active');
         updateOuput();
     });
 

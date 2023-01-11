@@ -1,0 +1,7 @@
+.answer-output {
+    display: none;
+}
+
+.answer-output.active {
+    display: block;
+}

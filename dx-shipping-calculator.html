@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/dx-shipping-calculator.css">
+    <title>KFD: DX Shipping-calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card card-body bg-light mt-3">
+            <h2>DX shipping calculator</h2>
+            <h4>Please answer the questions from below</h4>
+            <form action="" class="volume-calc-container">
+                <div class="row">
+                    <div class="col-12">
+                        <label for="height" class="mb-1">Please enter the height (CM)</label>
+                        <input type="text" name="height" class="form-control form-control-lg height mb-3" placeholder="height">
+                    </div>
+                    <div class="col-12">
+                        <label for="length" class="mb-1">Please enter the length (CM)</label>
+                        <input type="text" name="length" class="form-control form-control-lg length mb-3" placeholder="length">
+                    </div>
+                    <div class="col-12">
+                        <label for="depth" class="mb-1">Please enter the depth (CM)</label>
+                        <input type="text" name="length" class="form-control form-control-lg depth mb-3" placeholder="depth">
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-success btn-lg mt-3 submit-btn w-100 " value="Submit Answers">
+            </form>
+        </div>
+
+        <div class="card card-body bg-light mt-3 answer-output">
+            <div>
+                <span class="fs-4 mb-3">The volumised weight is <span class="volume-output fw-bold"></span></span>
+                <br>
+                <span class="fs-4 mb-3">The cost before discount is <span class="before-discount-output fw-bold"></span></span>
+                <br>
+                <span class="fs-4">The cost after discount is <span class="discount-output fw-bold"></span></span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/dx-shipping-calculator.js"></script>
+</html>

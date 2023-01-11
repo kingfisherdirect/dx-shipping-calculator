@@ -21,7 +21,7 @@ window.onload = function() {
         if (volume <= 20) {
             beforeDiscount = 10.50;
         } else {
-            let answer1, answer2, beforeDiscount = 0;
+            let answer1, answer2;
             answer1 = volume - 20;
             answer2 = answer1 * .37;
             beforeDiscount = answer2 + 10.50;
